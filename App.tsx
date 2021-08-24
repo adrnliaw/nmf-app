@@ -27,7 +27,7 @@ const release = Constants.manifest.revisionId || "0.0.0";
 if (!__DEV__) {
   const secret = require("./secret.ts").default || require("./secret.example.ts").default;
 
-  /* TODO: change secret.dsn to Constants.manifest.extra.sentryPublicDsn */
+  /* TODO: change secret.dsn to Constants.manifest.extra.sentryPublicDsn  */
   Sentry.init({
     dsn: secret.dsn,
     enableInExpoDevelopment: false,
