@@ -21,6 +21,7 @@ const supportedLanguages: string[] = ["en", "fr", "de", "sv", "da", "ru", "pt", 
 const defaultLanguage = "en";
 const defaultLocale = "en-us";
 
+
 if (!__DEV__) {
   const secret = require("./secret.ts").default || require("./secret.example.ts").default;
 
